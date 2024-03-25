@@ -102,7 +102,7 @@ Refer to [derry.yaml](derry.yaml) for a list of command shortcuts.
 
 ## Project Structure
 
-<img align="left" style="margin-right: 20px;width: 325px" src="screenshots/folder_structure.jpg"></img>
+<img align="left" style="margin-right: 20px;width: 325px" src="screenshots/folder_structure.png"></img>
 
 ### Entrypoint
 
