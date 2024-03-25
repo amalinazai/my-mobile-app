@@ -1,0 +1,91 @@
+#============================================================
+# ** Dev scripts **
+#============================================================
+
+get:
+  (description): script to clean build folder and reinstall package dependencies
+  (scripts):
+    - flutter clean
+    - flutter pub get
+    - cd ios && pod install
+
+locale:
+  (description): script to generate locale_key.g.dart file for easy_localization to work
+  (scripts):
+    - flutter pub run easy_localization:generate -S assets/lang -f keys -o locale_keys.g.dart -O lib/settings/localization
+
+build_runner:
+  (description): script to generate .g.dart or .freezed.dart files
+  (scripts): 
+    - flutter packages pub run build_runner build --delete-conflicting-outputs
+
+clean_build_runner:
+  (description): same as [build_runner] script but cleans the cache before running the build_runner command
+  (scripts):
+    - flutter pub run build_runner clean
+    - flutter packages pub run build_runner build --delete-conflicting-outputs
+
+watch_build_runner:
+  (description): script to generate .g.dart or .freezed.dart files
+  (scripts): 
+    - flutter packages pub run build_runner watch build --delete-conflicting-outputs
+
+#============================================================
+# ** Flavorizr scripts **
+#============================================================
+
+flavorize_bundles:
+  (description): script to regenerate android / iOS config files after updating application ID / bundle ID
+  (scripts):
+    - flutter pub run flutter_flavorizr -p ios:xcconfig,ios:buildTargets,ios:schema,ios:plist,android:buildGradle
+
+flavorize_icons:
+  (description): script to regenerate app icons 
+  (scripts):
+    - flutter pub run flutter_flavorizr -p ios:icons,android:icons
+
+flavorize_firebase:
+  (description): script to setup google-services.json and googleservice-info.plist for each flavor
+  (scripts):
+    - flutter pub run flutter_flavorizr -p google:firebase
+
+#============================================================
+# ** Build scripts **
+#============================================================
+
+build_apk: 
+  (description): script to build apk files for both production and development
+  (scripts):
+    - flutter build apk --obfuscate --split-debug-info=build/app/outputs/symbols --flavor development -t lib/main_development.dart --release
+    - flutter build apk --obfuscate --split-debug-info=build/app/outputs/symbols --flavor production -t lib/main_production.dart --release
+
+build_apk_staging: 
+  (description): script to build apk files for staging
+  (scripts):
+    - flutter build apk --obfuscate --split-debug-info=build/app/outputs/symbols --flavor staging -t lib/main_staging.dart --release
+
+build_aab:
+  (description): script to build aab files for production, staging and development
+  (scripts): 
+    - flutter build appbundle --obfuscate --split-debug-info=build/app/outputs/symbols --flavor production -t lib/main_production.dart --release
+    - flutter build appbundle --obfuscate --split-debug-info=build/app/outputs/symbols --flavor staging -t lib/main_staging.dart --release
+    - flutter build appbundle --obfuscate --split-debug-info=build/app/outputs/symbols --flavor development -t lib/main_development.dart --release
+
+build_aab_staging:
+  (description): script to build aab files for staging
+  (scripts):
+    - flutter build appbundle --obfuscate --split-debug-info=build/app/outputs/symbols --flavor staging -t lib/main_staging.dart --release
+
+build_ios_dev:
+  (description): script to build ios app in development
+  (scripts): 
+    - flutter build ios --obfuscate --split-debug-info=build/app/outputs/symbols --flavor development -t lib/main_development.dart
+
+build_ios_prod:
+  (description): script to build ios app in production
+  (scripts): 
+    - flutter build ios --obfuscate --split-debug-info=build/app/outputs/symbols --flavor production -t lib/main_production.dart
+
+#============================================================
+# ** Other scripts **
+#============================================================

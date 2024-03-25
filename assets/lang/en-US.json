@@ -1,0 +1,60 @@
+{
+    "request_cancelled_error": "The request was cancelled.",
+    "bad_certificate_error": "Bad certificate error.",
+    "unknown_error": "There has been an unknown error. Please try again later.",
+    "connection_timeout_error": "The request took longer than expected. Please try again later.",
+    "no_internet_connection_error": "Failed to connect to the internet. Please check your internet connectivity and try again later.",
+    "unable_to_format_error": "Unable to format the data. Please try again later.",
+    "unable_to_process_error": "Unable to process the data. Please try again later.",
+    "invalid_exception_error": "The exception is invalid.",
+
+    "session_expired": "Session Expired",
+
+    "default_alert_dialog_title": "Alert",
+    "default_confirmation_dialog_title": "Are you sure?",
+
+    "default_dialog_ok_cta": "OK",
+    "default_dialog_cancel_cta": "Cancel",
+
+    "double_tap_exit_title": "Tap again to exit.",
+
+    "loader_title": "Loading",
+
+    "counter": "Counter",
+    "name_update_textfield_hint": "Update your name here",
+
+    "default_select_placeholder": "Please select",
+    "default_text_field_placeholder": "Please state",
+    "default_yes_title": "Yes",
+    "default_no_title": "No",
+    "default_search_hint_text": "Search",
+
+    "welcome_back": "Welcome Back",
+    "username": "Username",
+    "password": "Password",
+    "login": "Login",
+
+    "good_morning": "Good Morning",
+    "good_afternoon": "Good Afternoon",
+    "good_evening": "Good Evening",
+
+    "products": "Products",
+    "view_products_here": "View Products Here",
+
+    "pagination_footer_title": "You're All Caught Up",
+    "pagination_footer_subtitle": "You've seen all new items.",
+    "loading": "Loading",
+
+    "add_new_product": "Add New Product",
+    "edit_product": "Edit Product",
+    "add": "Add",
+    "update": "Update",
+    "title": "Title",
+    "description": "Description",
+    "product_added": "Product Added!",
+    "product_updated": "Product Updated!",
+    "product_deleted": "Product Deleted!",
+
+    "logout": "Logout"
+
+}
