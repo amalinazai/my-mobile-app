@@ -1,6 +1,13 @@
 # My Mobile App
 
-A simple Flutter project created using BLoC state management. It consists of login page, product list page with pagination, CRUD operations for product & profile page
+A simple Flutter application with BLoC for state management.
+
+This app offers several functionalities:
+1. Secure Login: Users can log in through a dedicated login page.
+2. Paginated Product Listing: Products are displayed in a scrollable list with pagination, allowing for efficient browsing of large datasets.
+3. Complete CRUD (Create, Read, Update, Delete) for Products: Users can create new products, view existing ones, update product details, and even delete them.
+4. Dedicated Profile Management: A profile page provides user with options to logout.
+
 
 ## Prerequisites
 
