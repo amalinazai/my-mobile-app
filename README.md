@@ -167,5 +167,5 @@ The structure of each `feature` folder are as follows:
 
 #### `settings` folder
 
-Used to configure app settings such as `localizations` and `themes`.
+Used to configure app settings such as `localizations`.
 
