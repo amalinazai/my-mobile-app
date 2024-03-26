@@ -8,6 +8,9 @@ This app offers several functionalities:
 3. Complete CRUD (Create, Read, Update, Delete) for Products: Users can create new products, view existing ones, update product details, and even delete them.
 4. Dedicated Profile Management: A profile page provides user with options to logout.
 
+## API
+
+This project is using dummy APIs from [Dummy JSON](https://dummyjson.com)
 
 ## Prerequisites
 
