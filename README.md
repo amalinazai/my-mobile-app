@@ -10,7 +10,9 @@ This app offers several functionalities:
 
 ## API
 
-This project is using dummy APIs from [Dummy JSON](https://dummyjson.com)
+This project is using dummy APIs from [Dummy JSON](https://dummyjson.com).
+
+You may refer to https://dummyjson.com/users for valid credentials.
 
 ## Prerequisites
 
